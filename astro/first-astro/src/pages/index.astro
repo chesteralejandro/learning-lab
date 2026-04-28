@@ -1,10 +1,53 @@
 ---
 import AppLayout from '../layouts/AppLayout.astro';
-import TopSection from '../components/TopSection.astro';
 ---
 
 <AppLayout>
-	<TopSection>
-		<h2>Homepage</h2>
-	</TopSection>
+	<section>
+		<div class="content">
+			<h1>Better landing pages <br /> using Astro.</h1>
+			<a href="/about">Know more</a>
+		</div>
+	</section>
 </AppLayout>
+
+<style>
+	section {
+		padding-top: 3rem;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		/* outline: 2px dashed coral; */
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 3rem;
+		margin-top: -25%;
+	}
+
+	h1 {
+		font-family: var(--font-display);
+		letter-spacing: 1.5px;
+		font-size: 4.5rem;
+		line-height: 0.9;
+	}
+
+	a {
+		background-color: var(--color-gold);
+		border: 1px solid transparent;
+		color: white;
+		padding: 1rem 2rem;
+		border-radius: 6px;
+	}
+
+	a:hover {
+		background-color: transparent;
+		border: 1px solid var(--color-gold);
+		filter: brightness(0.9);
+	}
+</style>
