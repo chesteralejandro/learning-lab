@@ -1,5 +1,6 @@
 ---
 import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -16,6 +17,7 @@ import Nav from '../components/Nav.astro';
 		<main class="container">
 			<slot />
 		</main>
+		<Footer />
 	</body>
 </html>
 
@@ -48,6 +50,9 @@ import Nav from '../components/Nav.astro';
 		font-family: var(--font-body);
 		background-color: var(--color-black);
 		color: var(--color-white);
+		min-height: 100vh;
+		display: grid;
+		grid-template-rows: 1fr auto;
 	}
 
 	img {
