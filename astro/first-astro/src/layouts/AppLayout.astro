@@ -39,3 +39,51 @@
 		gap: 1rem;
 	}
 </style>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;700&display=swap');
+
+	:root {
+		--color-black: #111110;
+		--color-gold: #e8b84b;
+		--color-white: #e8e6df;
+
+		--font-display: 'DM Serif Display', Georgia, serif;
+		--font-body: 'DM Sans', sans-serif;
+		--font-mono: 'JetBrains Mono', monospace;
+	}
+
+	*,
+	*::before,
+	*::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-size: 100%;
+	}
+
+	body {
+		font-family: var(--font-body);
+		background-color: var(--color-black);
+		color: var(--color-white);
+	}
+
+	img {
+		display: inline-block;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.container {
+		width: min(1200px, 92%);
+		margin-inline: auto;
+	}
+</style>
