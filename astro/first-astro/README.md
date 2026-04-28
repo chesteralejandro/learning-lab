@@ -66,3 +66,16 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 💡 What I Learned
+
+- The global is a style element does not mean it will apply to all elements. It will only apply to **descendant** elements.
+
+```css
+/* Will only apply to elements inside this component (Astro file) */
+<style is:global>
+    p {
+        color: gray;
+    }
+</style>
+```
