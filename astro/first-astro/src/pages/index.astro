@@ -6,6 +6,12 @@ import AppLayout from '../layouts/AppLayout.astro';
 	<section>
 		<div class="content">
 			<h1>Better landing pages <br /> using Astro.</h1>
+			<p>
+				Comfort. Good morning—hope your day starts gently. Growing. Keep
+				going — what you're working toward is worth it. Sparkle. You
+				have an incredible ability to find the good in things. Blooming.
+				You bring lightness into conversations.
+			</p>
 			<a href="/about">Know more</a>
 		</div>
 	</section>
@@ -26,7 +32,7 @@ import AppLayout from '../layouts/AppLayout.astro';
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: center;
-		gap: 3rem;
+		gap: 2rem;
 		margin-top: -25%;
 	}
 
@@ -35,6 +41,10 @@ import AppLayout from '../layouts/AppLayout.astro';
 		letter-spacing: 1.5px;
 		font-size: 4.5rem;
 		line-height: 0.9;
+	}
+
+	p {
+		max-width: 60ch;
 	}
 
 	a {
