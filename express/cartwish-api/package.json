@@ -1,0 +1,31 @@
+{
+	"name": "cartwish_api",
+	"version": "1.0.0",
+	"description": "Backend API for cartwish",
+	"keywords": [
+		"api"
+	],
+	"license": "ISC",
+	"author": "Chester",
+	"type": "commonjs",
+	"main": "src/app.js",
+	"scripts": {
+		"dev": "nodemon -r dotenv/config src/app.js"
+	},
+	"dependencies": {
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"express": "^5.2.1",
+		"joi": "^17.13.3",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^8.13.2",
+		"multer": "^1.4.5-lts.1",
+		"passport": "^0.7.0",
+		"passport-facebook": "^3.0.0",
+		"passport-google-oauth2": "^0.2.0"
+	},
+	"devDependencies": {
+		"dotenv": "^17.3.1",
+		"nodemon": "^3.1.14"
+	}
+}
